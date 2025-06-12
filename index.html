@@ -8,9 +8,16 @@ window.__remixRouteModules = {"root":route0,"routes/_index":route1};
 import("/myst_assets_folder/entry.client-MRWD3U4M.js");</script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
+    // Remove the Document Outline nav
     const navElement = document.querySelector('nav[aria-label="Document Outline"]');
     if (navElement) {
       navElement.remove();
+    }
+
+    // Remove the theme toggle button
+    const themeToggleButton = document.querySelector('button[aria-label="Toggle theme between light and dark mode."]');
+    if (themeToggleButton) {
+      themeToggleButton.remove();
     }
   });
 </script>
